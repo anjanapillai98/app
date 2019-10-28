@@ -1,0 +1,32 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+
+void main()
+{
+  runApp(MyApp());
+
+}
+class MyApp  extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home:Scaffold(
+        backgroundColor: Colors.black,
+        appBar: AppBar(
+          backgroundColor: Colors.blue,
+          title: Text("sbce app"),
+        ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center
+          children: <Widget>[
+            CircleAvatar(
+              backgroundImage: AssetImage('images/aj.jpeg'),
+              radius: 70.0,
+            )
+          ],
+        ),
+      )
+    );
+  }
+}
